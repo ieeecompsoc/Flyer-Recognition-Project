@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flyer Recognition App</title>
+</head>
+<body>
+	<form action="{% url 'homeview' %}" method="post">{% csrf_token %}
+		<input type="file" name="image">
+		<input type="submit" name="">
+	</form>
+</body>
+</html>

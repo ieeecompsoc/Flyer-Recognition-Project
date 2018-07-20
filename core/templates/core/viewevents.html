@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event List</title>
+</head>
+<body>
+	<table border="1px">
+		<tr>
+			<th>Name</th>
+			<th>Date</th>
+			<th>Time</th>
+			<th>Location</th>
+			<th>Hosted By</th>
+		</tr>
+	{% for event in events %}
+		<tr>
+			<td>{{event.name}}</td>
+			<td>{{event.date}}</td>
+			<td>{{event.time}}</td>
+			<td>{{event.location}}</td>
+			<td>{{event.hosted_by}}</td>
+		</tr>
+	{% endfor %}
+		</table>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Details</title>
+</head>
+<body>
+	<form action="{% url 'savedata' %}" method='post'>{% csrf_token %}
+		Name: <input type="text" value='{{ name_of_event }}' name="name"><br>
+		Time: <input type="text" value="{{ time_of_event }}" name="time"><br>
+		Date: <input type="text" value="{{ date_of_event }}" name="date"><br>
+		Location: <input type="text" value="{{ location }}" name="location"><br>
+		Hosted By: <input type="text" value="{{ hosted_by }}" name="hosted_by"><br>
+		<input type="submit" name="">
+	</form>
+</body>
+</html>
